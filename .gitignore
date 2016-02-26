@@ -8,3 +8,6 @@
 
 # Java
 *.class
+
+# Compressed files
+*.tar.gz
