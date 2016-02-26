@@ -1,13 +1,14 @@
 JAVA_HOME=/usr/lib/jvm/java-current
 VERSION=0.8.0
+DESTDIR=.
 
-compile: libunix-java.so
+install: libunix-java.so
 
 help:
 	@echo 'Makefile for dbus-java-libunix                                               '
 	@echo '                                                                        '
 	@echo 'Usage:                                                                  '
-	@echo '   make compile                 compile native C code               '
+	@echo '   make install                 compile native C code               '
 	@echo '   make clean                       remove generated shared library     '
 	@echo '                                                                        '
 
@@ -18,13 +19,15 @@ libunix-java.so:
 	gcc -O3 -fPIC -shared -I$(JAVA_HOME)/include/ \
 	-I$(JAVA_HOME)/include/linux/ \
 	unix-java.c \
-	-o libunix-java.so
+	-o $(DESTDIR)/libunix-java.so
 
 dist:
-	tar -cvf dbus-java-libunix-$(VERSION).tar.gz *.c *.h
+	mkdir -p dbus-java-libunix-$(VERSION)
+	cp Makefile *.c *.h dbus-java-libunix-$(VERSION)
+	tar -czvf dbus-java-libunix-$(VERSION).tar.gz dbus-java-libunix-$(VERSION)
 
 clean:
 	rm -f libunix-java.so \
 	rm -f *.tar.gz
 
-.PHONY: clean compile help
+.PHONY: clean install help
