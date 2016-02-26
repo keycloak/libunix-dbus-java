@@ -1,4 +1,5 @@
 JAVA_HOME=/usr/lib/jvm/java-current
+VERSION=0.8.0
 
 compile: libunix-java.so
 
@@ -20,10 +21,10 @@ libunix-java.so:
 	-o libunix-java.so
 
 dist:
-	tar -cvf dbus-java-libunix.tar.gz *.c *.h
+	tar -cvf dbus-java-libunix-$(VERSION).tar.gz *.c *.h
 
 clean:
-	[ ! -f libunix-java.so ] || \
-	rm libunix-java.so *.tar.gz
+	rm -f libunix-java.so \
+	rm -f *.tar.gz
 
 .PHONY: clean compile help
