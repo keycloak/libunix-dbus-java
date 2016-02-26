@@ -1,0 +1,10 @@
+# Object files
+*.o
+
+# Shared objects (inc. Windows DLLs)
+*.so
+*.so.*
+*.dylib
+
+# Java
+*.class
