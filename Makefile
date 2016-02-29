@@ -1,4 +1,3 @@
-JAVA_HOME=/usr/lib/jvm/java-current
 VERSION=0.8.0
 DESTDIR=.
 
