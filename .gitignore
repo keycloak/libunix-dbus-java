@@ -30,3 +30,8 @@ Makefile.in
 /install-sh
 /missing
 /stamp-h1
+config.*
+.deps/
+libtool
+ltmain.sh
+m4/
