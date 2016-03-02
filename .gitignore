@@ -13,6 +13,7 @@
 
 # Compressed files
 *.tar.gz
+*.tar.xz
 
 # http://www.gnu.org/software/automake
 
