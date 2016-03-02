@@ -4,6 +4,8 @@
 # Shared objects (inc. Windows DLLs)
 *.so
 *.so.*
+*.la
+*.lo
 *.dylib
 
 # Java
@@ -35,3 +37,4 @@ config.*
 libtool
 ltmain.sh
 m4/
+.libs/
