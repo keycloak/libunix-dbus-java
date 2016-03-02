@@ -6,7 +6,7 @@ LT_INIT
 
 AC_PROG_CC
 
-JNI_CPPFLAGS="-Iinclude/ -Iinclude/linux/"
+JNI_CPPFLAGS="-I$JAVA_HOME/include/ -I$JAVA_HOME/include/linux/"
 CPPFLAGS="$CPPFLAGS $JNI_CPPFLAGS"
 
 AC_CHECK_HEADERS([jni.h], [], AC_MSG_ERROR([Native java headers not found. Is \$JAVA_HOME set correctly?]))
