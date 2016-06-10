@@ -5,5 +5,5 @@
 
 ```
 $ libtoolize;aclocal;autoconf;automake --add-missing;
-$ ./configure && make && make install
+$ ./configure --with-jvm=<PATH OF YOUR JAVA_HOME> && make && make install
 ```
