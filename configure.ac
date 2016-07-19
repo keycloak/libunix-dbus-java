@@ -1,4 +1,4 @@
-AC_INIT([libunix-dbus-java], [0.8.0], [bruno@abstractj.org])
+AC_INIT([libunix-dbus-java], [0.9.0], [bruno@abstractj.org])
 AC_CONFIG_MACRO_DIR([m4])
 
 AM_INIT_AUTOMAKE([foreign dist-xz])
