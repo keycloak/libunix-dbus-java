@@ -1,6 +1,12 @@
 # libunix-dbus-java
 :bus: Fork of Unix Sockets Library. See: http://www.matthew.ath.cx/projects/java/
 
+## Requirements
+
+```
+dnf install zlib-devel automake autoconf
+```
+
 ## Instructions to build
 
 ```
