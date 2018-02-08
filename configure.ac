@@ -5,6 +5,7 @@ AM_INIT_AUTOMAKE([foreign dist-xz])
 LT_INIT
 
 AC_PROG_CC
+AC_PROG_CC_STDC
 
 AC_ARG_WITH([jvm],
             [AS_HELP_STRING([--with-jvm], [JAVA HOME PATH])],
